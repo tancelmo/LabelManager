@@ -1,6 +1,7 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,14 +14,19 @@ namespace LabelManager
         
         public static void GetPrinter(ComboBox comboBox)
         {
-            ConfigFile GetConfig = new ConfigFile("C:\\Users\\bakur\\Desktop\\config.ini");
-            comboBox.Items.Add(GetConfig.Read("Location", "Printer"));
+            var printers = File.ReadLines(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Label Manager\\Printers.ini");
+            //ConfigFile GetConfig = new ConfigFile(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "Printers.ini");
+            //comboBox.Items.Add(printers);
+            comboBox.ItemsSource = printers;
         }
 
         public static void GetLabels(ComboBox comboBox)
         {
-            ConfigFile GetConfig = new ConfigFile("C:\\Users\\bakur\\Desktop\\config.ini");
-            comboBox.Items.Add(GetConfig.Read("LabelTemplate", "Label"));
+            var labels = File.ReadLines(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Label Manager\\Labels.ini");
+            comboBox.ItemsSource = labels;
         }
+
+        
+        
     }
 }

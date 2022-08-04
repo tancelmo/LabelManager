@@ -11,11 +11,29 @@
     <UseWinUI>true</UseWinUI>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <ApplicationIcon>ReportManager_ico.ico</ApplicationIcon>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>C:\Users\bakur\Desktop\</AppxPackageDir>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Always</AppxBundle>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateThumbprint>02CD5915435EF813BBC84AA368C3843971C90CE1</PackageCertificateThumbprint>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Assets\LabelManagerIcon.scale-100.png" />
     <None Remove="Assets\LabelManagerIcon.targetsize-16.png" />
     <None Remove="Assets\LabelManagerIcon.targetsize-24.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-24_altform-unplated.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-256_altform-unplated.png" />
     <None Remove="Assets\LabelManagerIcon.targetsize-32.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-32_altform-lightunplated.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-32_altform-unplated.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-48_altform-lightunplated.png" />
+    <None Remove="Assets\LabelManagerIcon.targetsize-48_altform-unplated.png" />
   </ItemGroup>
 
   <ItemGroup>

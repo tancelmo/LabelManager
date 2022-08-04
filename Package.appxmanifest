@@ -8,8 +8,8 @@
 
   <Identity
     Name="fdd73cb1-e188-4dcc-9d16-52a57bd83bef"
-    Publisher="CN=bakur"
-    Version="1.0.0.0" />
+    Publisher="CN=Tom"
+    Version="1.0.1.0" />
 
   <Properties>
     <DisplayName>LabelManager</DisplayName>
@@ -31,7 +31,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="LabelManager"
+        DisplayName="Label Manager"
         Description="LabelManager"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
