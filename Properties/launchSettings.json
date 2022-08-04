@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LabelManager (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LabelManager (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
